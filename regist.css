@@ -1,0 +1,245 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+input{
+    border-radius:5px;
+    font-size: 20px;
+}
+form{
+    padding: 30px;
+    position: fixed; top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid white;
+    border-radius: 10px;
+    border-color: white;
+    backdrop-filter: blur(5px);
+    background: rgba(255,255,255,0.1);
+}
+form h1{
+    text-align: center;
+    color: white;
+}
+body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, mediumpurple, hotpink);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+/*button{
+    background-image: none;
+    text-decoration-color:white;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+ */
+form:focus{
+    color: white;
+}
+form.name{
+    text-decoration-color: white;
+}
+label{
+    color: white;
+}
+legend{
+    color: white;
+}
+fieldset{
+    color: white;
+}
+
+#name::placeholder{
+    color: white;
+}
+#phone::placeholder{
+    color: white;
+}
+#email::placeholder{
+    color: white;
+}
+#passwd::placeholder{
+    color: white;
+}
+#name{
+    background-image: none;
+    background-color: transparent;
+    border-color: white;
+}
+#phone{
+    background-image: none;
+    background-color: transparent;
+    border-color: white;
+}
+#email{
+    background-image: none;
+    background-color: transparent;
+    border-color: white;
+}
+#passwd{
+    background-image: none;
+    background-color: transparent;
+    border-color: white;
+}
+/*#reg{
+    background-image: none;
+    background-color: transparent;
+    border-color: white;
+}
+*/
+a{
+    color: white;
+}
+a:active{
+    color: white;
+}
+a:visited{
+    color: white;
+}
+header h1,nav{
+    text-align: center;
+    color: white;
+}
+header a[href="#HTML"]{
+    color: white;
+}
+header a[href="#CSS"]{
+    color: white;
+}
+header a[href="#JavaScript"]{
+    color: white;
+}
+header img{
+    display:block;
+    margin:auto;
+}
+header {
+    position: static;
+    width: 100%;
+    color: black;
+    background-image: none;
+    background-color: transparent;
+}
+button{
+    position: relative;
+    height: 37px;
+    width:182px;
+    background: transparent;
+    color: white;
+    border: none;
+    border-radius: 1px;
+    border-color: white;
+    box-sizing: border-box;
+    text-decoration-color: white;
+    display: block;
+    left: 0;
+    top:0;
+    transition: all 500ms ease-out;
+    font-size: 16px;
+}
+button:before {
+    content:'';
+    position: absolute;
+    height: 35px;
+    top:0;
+    width: 0;
+    left: 0;
+    background: rgba(140, 44, 219, 0.5);
+    border-radius: 5px;
+    border-color: transparent;
+    transition: all 2s ease-out;
+}
+button:hover:before {
+    width: 180px;
+}
+.block1{
+    position: absolute;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255,255,255,0.5);
+    border-radius: 10px;
+    border-right: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    background: rgba(255,255,255,0.1);
+    top: 250px;
+    right: 720px;
+    width: 120px;
+    height: 120px;
+    animation:animate 10s linear infinite;
+    animation-delay: calc(-1s*1);
+}
+.block2{
+    position: absolute;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255,255,255,0.5);
+    border-radius: 10px;
+    border-right: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    background: rgba(255,255,255,0.1);
+    top: 600px;
+    right: 1105px;
+    width: 170px;
+    height: 170px;
+    z-index: 2;
+    animation:animate 10s linear infinite;
+    animation-delay: calc(-1s*2);
+}
+.block3{
+    position: absolute;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255,255,255,0.5);
+    border-radius: 10px;
+    border-right: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    background: rgba(255,255,255,0.1);
+    top: 300px;
+    right: 1105px;
+    width: 140px;
+    height: 140px;
+    animation:animate 10s linear infinite;
+    animation-delay: calc(-1s*3);
+}
+.block4{
+    position: absolute;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255,255,255,0.5);
+    border-radius: 10px;
+    border-right: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    background: rgba(255,255,255,0.1);
+    top: 600px;
+    right: 720px;
+    width: 80px;
+    height: 80px;
+    z-index: 2;
+    animation:animate 10s linear infinite;
+    animation-delay: calc(-1s*4);
+}
+@keyframes animate {
+    0%{
+        transform: translateY(-40px);
+    }
+    50%{
+        transform: translateY(40px);
+    }
+    100%{
+        transform: translateY(-40px);
+    }
+}

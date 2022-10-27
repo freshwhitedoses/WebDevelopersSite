@@ -1,0 +1,128 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+input{
+    border-radius:5px;
+    font-size: 20px;
+}
+form{
+    padding: 30px;
+    position: fixed; top: 50%; left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border: 3px solid white;
+    border-radius: 10px;
+    border-color: white;
+}
+form h1{
+    text-align: center;
+    color: white;
+}
+body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, mediumpurple, hotpink);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+button:focus{
+    color: white;
+}
+form:focus{
+    color: white;
+}
+form.name{
+    text-decoration-color: white;
+}
+button.auth{
+    text-decoration-color: white;
+}
+#phone::placeholder{
+    color: white;
+}
+#email::placeholder{
+    color: white;
+}
+#passwd::placeholder{
+    color: white;
+}
+#phone{
+    background-image: none;
+    background-color: transparent;
+    border-color: white;
+}
+#email{
+    background-image: none;
+    background-color: transparent;
+    border-color: white;
+}
+#passwd{
+    background-image: none;
+    background-color: transparent;
+    border-color: white;
+}
+a{
+    color: white;
+}
+a:active{
+    color: white;
+}
+a:visited{
+    color: white;
+}
+header h1,nav{
+    text-align: center;
+    color: white;
+}
+header a[href="#HTML"]{
+    color: white;
+}
+header a[href="#CSS"]{
+    color: white;
+}
+header a[href="#JavaScript"]{
+    color: white;
+}
+.ss{
+    text-decoration: none;
+}
+header img{
+    display:block;
+    margin:auto;
+}
+header {
+    position: static;
+    width: 100%;
+    color: black;
+    background-image: none;
+    background-color: transparent;
+}
+button{
+    background-image: none;
+    color:black;
+    background-color: mediumpurple;
+    border-color: white;
+    cursor: pointer;
+    height: 35px;
+    width: 100px;
+    border-radius: 5px;
+    font-size: 17px;
+    box-shadow: 0 0 40px 40px mediumpurple inset, 0 0 0 0 mediumpurple;
+    transition: all 150ms ease-in-out;
+}
+button:hover {
+    box-shadow: 0 0 10px 0 mediumpurple inset, 0 0 10px 7px mediumpurple;
+}
+

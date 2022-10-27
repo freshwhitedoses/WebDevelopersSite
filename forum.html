@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="forum.css">
+    <title>Web-Developer</title>
+    <link rel="icon" type="image/png" href="resourses/veb-razrabotchik.jpg">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Montserrat+Alternates:wght@300&display=swap');
+    </style>
+</head>
+<body>
+<h1>Форум для веб-разработчиков</h1>
+<form>
+    <label for="problem">Тип вопроса или предложения</label>
+    <select name="problem" required  id="problem">
+        <option value="">--Выберите тип вопроса или предложения--</option>
+        <option value="ver">Верстка</option>
+        <option value="des">Дизайн</option>
+        <option value="stl">Стилизация</option>
+        <option value="bst">Предложения по улучшению сайта</option>
+        <option value="err">Ошибки</option>
+    </select><br>
+    <label for="time">Выберите ожидаемое время получение ответа</label>
+    <input type="datetime-local" name="time" id="time">
+
+ <label for="qstn"></label><br>
+<textarea id="qstn" placeholder="Задайте свой вопрос, и вам ответят другие участники форума" required rows="20" cols="100" minlength="1" maxlength="1000" ></textarea>
+<label for="file">Добавить файл</label>
+ <input type="file" name="file" id="file"><br>
+<button type="submit" id="forum" autofocus>Отправить</button>
+</form>
+<hr>
+<h2 class="hz">Вопросы и предложения</h2>
+<div class="questBox">
+
+    <div class="quest">
+        <div class="name">
+            <h2>Вопрос 1</h2>
+        </div>
+        <div class="descript">
+            <p>Как выровнить текст внутри div или внутри кнопки? Помогите, пожалуйста</p>
+            <a href="#">Ответить</a>
+        </div>
+    </div>
+
+
+    <div class="quest">
+    <div class="name">
+        <h2>Вопрос 2</h2>
+    </div>
+    <div class="descript">
+        <p>Что делать, если сайт не работает и ничего не отображает? Помогите, пожалуйста</p>
+        <a href="#">Ответить</a>
+    </div>
+    </div>
+
+    <div class="quest">
+    <div class="name">
+        <h2>Вопрос 3</h2>
+    </div>
+    <div class="descript">
+        <p>Как сделать крутую анимацию для кнопки и фона? Помогите, пожалуйста</p>
+        <a href="#">Ответить</a>
+    </div>
+    </div>
+</div>
+</body>
+</html>
