@@ -1,0 +1,590 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+.icons img:hover{
+    background:linear-gradient(45deg,#ffaf00, #bb03ff);
+    border-radius: 50%;
+}
+.links li:hover{
+     scale: 1.1;
+ }
+.container{
+    margin-top: 30px;
+    display: grid;
+    margin-left: 20px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows:repeat(3,1fr);
+    gap: 20px;
+    grid-template-areas:
+"item1 item1 item2 item3"
+"item4 item5 item2 item6"
+"item4 item7 item7 item7";
+}
+.box1{
+    grid-area: item1;
+    background: #00ccff;
+    border-radius: 5px;
+}
+.box2{
+    grid-area: item2;
+    background: #00ccff;
+    border-radius: 5px;
+}
+.box3{
+    grid-area: item3;
+    background: #00ccff;
+    border-radius: 5px;
+}
+.box4{
+    grid-area: item4;
+    background: #00ccff;
+    border-radius: 5px;
+}
+.box5{
+    grid-area: item5;
+    background: #00ccff;
+    border-radius: 5px;
+}
+.box6{
+    grid-area: item6;
+    background: #00ccff;
+    border-radius: 5px;
+}
+.box7{
+    grid-area: item7;
+    background: #00ccff;
+    border-radius: 5px;
+}
+.box1:hover,.box2:hover,.box3:hover,.box4:hover, .box5:hover,.box6:hover,.box7:hover{
+    background: white;
+    transition:1s;
+}
+/*
+.box1:not(:hover),.box1:not(:hover),.box2:not(:hover),.box3:not(:hover),.box4:not(:hover),.box5:not(:hover),.box6:not(:hover),.box7:not(:hover){
+    filter:blur(5px);
+}
+.box1:hover,.box2:hover,.box3:hover,.box4:hover,.box5:hover,.box6:hover,.box7:hover {
+    filter: blur(0);
+}
+
+ */
+header{
+    background: #00ccff;
+}
+header img{
+    display: block;
+    margin:auto;
+}
+.navbar{
+    display: grid;
+    grid-template-columns: repeat(3,calc(100%/3));
+    gap:10px;
+    grid-template-areas:
+    "it1 it2 it3";
+}
+.conten1{
+    grid-area: it1;
+    justify-self: end;
+    text-decoration: none;
+    color: black;
+}
+.conten2{
+    grid-area: it2;
+    justify-self: center;
+}
+.conten3{
+    grid-area: it3;
+    justify-self: start;
+    text-decoration: none;
+    color: black;
+}
+.conten1:hover{
+    scale: 1.1;
+}
+.conten3:hover{
+    scale: 1.1;
+}
+aside{
+    margin-left: 20px;
+    background: #00ccff;
+    padding: 10px;
+    width: 200px;
+    float: right;
+    position: sticky;
+    margin-top: 20px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+a{
+    text-decoration:none;
+    color: black;
+}
+.box1 .imgOn{text-align: center; font-size: 20px;}
+.box2 .imgOn{ text-align: center; font-size: 20px;}
+.box3 .imgOn{ text-align: center; font-size: 20px;}
+.box4 .imgOn{ text-align: center; font-size: 20px;}
+.box5 .imgOn{ text-align: center; font-size: 20px;}
+.box6 .imgOn{ text-align: center; font-size: 20px;}
+.box7 .imgOn{ text-align: center; font-size: 20px;}
+.box1 img{height: 90px;}
+.box2 img{ height: 90px;}
+.box3 img{ height: 90px;}
+.box4 img{ height: 90px;}
+.box5 img{ height: 90px;}
+.box6 img{ height: 90px;}
+.box7 img{ height: 90px;}
+section{
+    width: 100%;
+    height: auto;
+    background: #00ccff;
+}
+
+form{
+    display: grid;
+    margin-left: 40px;
+    width: auto;
+    height: auto;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows:repeat(3,50px);
+    gap: 20px;
+    grid-template-areas:
+        "i1 i2"
+        "i3 i4"
+        "i6 i6"
+        "i5 i5"
+;
+}
+.name{
+    grid-area: i1;
+    background: transparent;
+    font-size: 30px;
+    text-decoration-color: white;
+    justify-self: center;
+    border: none;
+    border-bottom-style: solid;
+}
+.name:focus{
+    background: linear-gradient(45deg,#ffaf00, #bb03ff);
+    color: black;
+    border-bottom-style: none;
+}
+.surname{
+    grid-area: i2;
+    font-size: 30px;
+    background: transparent;
+    justify-self: center;
+    border: none;
+    border-bottom-style: solid;
+}
+.surname:focus{
+    background: linear-gradient(45deg,#ffaf00, #bb03ff);
+    color: black;
+    border-bottom-style: none;
+}
+.phone{
+    grid-area: i3;
+    font-size: 30px;
+    background: transparent;
+    justify-self: center;
+    border: none;
+    border-bottom-style: solid;
+}
+.phone:focus{
+    background: linear-gradient(45deg,#ffaf00, #bb03ff);
+    color: black;
+    border-bottom-style: none;
+}
+.email{
+    grid-area: i4;
+    font-size: 30px;
+    background: transparent;
+    justify-self: center;
+    border: none;
+    border-bottom-style: solid;
+}
+.email:focus{
+    background:linear-gradient(45deg,#ffaf00, #bb03ff);
+    color: black;
+    border-bottom-style: none;
+}
+
+.reg{
+    grid-area: i5;
+    justify-self: center;
+    font-size: 50px;
+    background: transparent;
+    border-bottom-style: double;
+    border-color: black;
+    margin-bottom: 40px;
+    box-shadow: 0 0 40px 40px #00ccff inset, 0 0 0 0 #00ccff;
+}
+.reg:hover{
+    box-shadow: 0 0 10px 0  dodgerblue inset, 0 0 10px 7px dodgerblue;
+}
+.h2{
+text-align: center;
+    color: black;
+    font-size: 50px;
+}
+
+footer{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    grid-template-areas:
+            "i1 i2 i3";
+    background: #00ccff;
+}
+.about{
+    grid-area: i1;
+    margin-left: 30px;
+    font-size: 20px;
+}
+.about p{
+    border:none;
+    border-bottom-style: solid;
+}
+.links{
+    grid-area: i2;
+    font-size: 20px;
+    justify-self: center;
+}
+.links p{
+    border:none;
+    border-bottom-style: solid;
+}
+.contacts{
+    grid-area: i3;
+    font-size: 20px;
+    justify-self: center;
+}
+.contacts p{
+    border:none;
+    border-bottom-style: solid;
+}
+
+@media screen and(max-width: 2560px) {
+}
+@media screen and (max-width:1300px)  {
+    aside{
+        display: none;
+    }
+    .container{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows:repeat(5,15vw);
+        gap: 20px;
+        grid-template-areas:
+        "item1 item2"
+        "item3 item2"
+        "item4 item5"
+        "item4 item6"
+        "item7 item7";
+
+    }
+
+    .box1{
+        grid-area: item1;
+        background: #00ccff;
+        border-radius: 5px;
+        align-self: start;
+    }
+    .box2{
+        grid-area: item2;
+        background: #00ccff;
+        border-radius: 5px;
+        align-self: center;
+    }
+    .box3{
+        grid-area: item3;
+        background: #00ccff;
+        border-radius: 5px;
+        align-self: end;
+    }
+    .box4{
+        grid-area: item4;
+        background: #00ccff;
+        border-radius: 5px;
+        align-self: center;
+    }
+    .box5{
+        grid-area: item5;
+        background: #00ccff;
+        border-radius: 5px;
+        align-self: start;
+    }
+    .box6{
+        grid-area: item6;
+        background: #00ccff;
+        border-radius: 5px;
+        align-self: end;
+    }
+    .box7{
+        grid-area: item7;
+        background: #00ccff;
+        border-radius: 5px;
+        align-self: end;
+
+    }
+    .box1 .imgOn{text-align: center; font-size: 15px;}
+    .box2 .imgOn{ text-align: center; font-size: 15px;}
+    .box3 .imgOn{ text-align: center; font-size: 15px;}
+    .box4 .imgOn{ text-align: center; font-size: 15px;}
+    .box5 .imgOn{ text-align: center; font-size: 15px;}
+    .box6 .imgOn{ text-align: center; font-size: 15px;}
+    .box7 .imgOn{ text-align: center; font-size: 15px;}
+    .box1 img{height:60px;}
+    .box2 img{ height: 60px;}
+    .box3 img{ height: 60px;}
+    .box4 img{ height: 60px;}
+    .box5 img{ height: 60px;}
+    .box6 img{ height: 60px;}
+    .box7 img{ height: 60px;}
+
+
+    footer{
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        gap: 20px;
+        grid-template-areas:
+            "i1 i2 "
+            "i3 i3"
+    ;
+        background: #00ccff;
+    }
+    .about{
+        grid-area: i1;
+        margin-left: 30px;
+        font-size: 20px;
+    }
+    .links{
+        grid-area: i2;
+        font-size: 20px;
+
+    }
+    .contacts{
+        grid-area: i3;
+        font-size: 20px;
+    justify-self: start;
+    }
+}
+@media screen and (max-width:780px)  {
+    aside{
+        display: none;
+    }
+    .container{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows:repeat(7,1fr);
+        gap: 20px;
+        grid-template-areas:
+        "item1"
+         "item2"
+         "item3"
+         "item4"
+         "item5"
+         "item6"
+         "item7"
+        ;
+
+    }
+
+    .box1{
+        grid-area: item1;
+        background: #00ccff;
+        border-radius: 5px;
+    }
+    .box2{
+        grid-area: item2;
+        background: #00ccff;
+        border-radius: 5px;
+    }
+    .box3{
+        grid-area: item3;
+        background: #00ccff;
+        border-radius: 5px;
+    }
+    .box4{
+        grid-area: item4;
+        background: #00ccff;
+        border-radius: 5px;
+    }
+    .box5{
+        grid-area: item5;
+        background: #00ccff;
+        border-radius: 5px;
+    }
+    .box6{
+        grid-area: item6;
+        background: #00ccff;
+        border-radius: 5px;
+    }
+    .box7{
+        grid-area: item7;
+        background: #00ccff;
+        border-radius: 5px;
+    }
+    .box1 .imgOn{text-align: center; font-size: 15px;}
+    .box2 .imgOn{ text-align: center; font-size: 15px;}
+    .box3 .imgOn{ text-align: center; font-size: 15px;}
+    .box4 .imgOn{ text-align: center; font-size: 15px;}
+    .box5 .imgOn{ text-align: center; font-size: 15px;}
+    .box6 .imgOn{ text-align: center; font-size: 15px;}
+    .box7 .imgOn{ text-align: center; font-size: 15px;}
+    .box1 img{height:60px;}
+    .box2 img{ height: 60px;}
+    .box3 img{ height: 60px;}
+    .box4 img{ height: 60px;}
+    .box5 img{ height: 60px;}
+    .box6 img{ height: 60px;}
+    .box7 img{ height: 60px;}
+
+
+    .navbar{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        gap:1px;
+        grid-template-areas:
+            "it1 it1"
+            "it2 it3 ";
+    }
+    .conten1{
+        grid-area: it2;
+        text-decoration: none;
+        color: black;
+        justify-self: center;
+        font-size: 13px;
+    }
+    .conten2{
+        grid-area: it1;
+
+        font-size: 22px;
+    }
+    .conten3{
+        grid-area: it3;
+        text-decoration: none;
+        font-size: 13px;
+        color: black;
+        justify-self: center;
+    }
+
+
+    form{
+        display: grid;
+        margin-left: 40px;
+        width: auto;
+        height: auto;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows:repeat(5,50px);
+        gap: 20px;
+        grid-template-areas:
+        "i1"
+        "i2"
+        "i3"
+        "i4"
+        "i6"
+        "i5"
+    ;
+    }
+    .name{
+        grid-area: i1;
+        background: transparent;
+        font-size: 30px;
+        text-decoration-color: white;
+        justify-self: center;
+        border: none;
+        border-bottom-style: solid;
+    }
+    .name:hover{
+        background: white;
+        color: black;
+        border-bottom-style: none;
+    }
+    .surname{
+        grid-area: i2;
+        font-size: 30px;
+        background: transparent;
+        justify-self: center;
+        border: none;
+        border-bottom-style: solid;
+    }
+    .surname:hover{
+        background: white;
+        color: black;
+        border-bottom-style: none;
+    }
+    .phone{
+        grid-area: i3;
+        font-size: 30px;
+        background: transparent;
+        justify-self: center;
+        border: none;
+        border-bottom-style: solid;
+    }
+    .phone:hover{
+        background: white;
+        color: black;
+        border-bottom-style: none;
+    }
+    .email{
+        grid-area: i4;
+        font-size: 30px;
+        background: transparent;
+        justify-self: center;
+        border: none;
+        border-bottom-style: solid;
+    }
+    .email:focus{
+        background: white;
+        color: black;
+        border-bottom-style: none;
+    }
+
+    .reg{
+        grid-area: i5;
+        justify-self: center;
+        font-size: 50px;
+        background: transparent;
+        border-bottom-style: double;
+        border-color: black;
+        box-shadow: 0 0 40px 40px #00ccff inset, 0 0 0 0 #00ccff;
+    }
+    .reg:hover{
+        box-shadow: 0 0 10px 0  dodgerblue inset, 0 0 10px 7px dodgerblue;
+    }
+    footer{
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 30px;
+        grid-template-areas:
+            "i1"
+            "i2"
+            "i3";
+        background: #00ccff;
+    }
+    .about{
+        grid-area: i1;
+        margin-left: 30px;
+        font-size: 20px;
+        justify-self: center;
+    }
+    .links{
+        grid-area: i2;
+        margin-left: 30px;
+        font-size: 20px;
+        justify-self: center;
+    }
+    .contacts{
+        grid-area: i3;
+
+        font-size: 20px;
+        justify-self: center;
+    }
+}

@@ -15,6 +15,23 @@ footer {
 footer a{
 padding: 30px;
 }
+
+.heart{
+    margin-left: 40px;
+    margin-bottom: 30px;
+    height: 50px;
+    width: 70px;
+    border-radius: 20px;
+}
+.heart img{
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+
+
+
+
 /*
 .links img{
     height: 50px;
