@@ -28,10 +28,43 @@ padding: 30px;
     margin-top: 5px;
 }
 
-
-
-
-
+.draw{
+    height: 500px;
+    width: 1500px;
+    border-color: black;
+    border-style: solid;
+    margin-bottom: 40px;
+}
+.ball{
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #e73c7e;
+}
+.bucket{
+    height: 40px;
+    width: 120px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    background-color:white;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.text-box{
+    background-color: #211d1d;
+    width: 50%;
+    text-align: justify;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 5%;
+}
+.textcontent{
+    color: white;
+}
 /*
 .links img{
     height: 50px;
@@ -95,7 +128,7 @@ aside{
     float: right;
     position: sticky;
     top: 20px;
-    height: 350px;
+    height: 380px;
 }
 *{
     font-family: 'Montserrat', sans-serif;
