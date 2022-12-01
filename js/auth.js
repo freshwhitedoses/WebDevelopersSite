@@ -3,7 +3,7 @@ let Alpha=['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N',
     'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's',
     't', 'u', 'v', 'w', 'x', 'y', 'z'];
 let Nums=[0,1,2,3,4,5,6,7,8,9]
-let stringCaptcha
+let stringCaptcha=''
 function getCaptcha(){
     for(let i=0;i<6;i++){
         let randomChar=Alpha[Math.floor(Math.random()*Alpha.length)];
@@ -32,7 +32,7 @@ chechBtn.addEventListener("click",e=> {
         if (result1 === stringCaptcha.toString()) {
             setTimeout(() => {
                 window.location.href = 'index.html'
-            }, 200);
+            }, 300);
         } else {
             getSum();
             let result2 = prompt(sumCaptcha);
@@ -43,7 +43,7 @@ chechBtn.addEventListener("click",e=> {
                 if (result2 === result.toString()) {
                     setTimeout(() => {
                         window.location.href = 'index.html'
-                    }, 300);
+                    }, 200);
                 } else {
                     alert("Ошибочка вышла")
                 }

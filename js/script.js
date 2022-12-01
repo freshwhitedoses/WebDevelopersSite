@@ -64,7 +64,7 @@ ball.addEventListener('click',mousemove)
 
 
 
-let maxlength = prompt("Input the length")
+let maxlength = prompt("Введите длину строки")
 
 let textBlock = document.querySelector(".textcontent")
 
